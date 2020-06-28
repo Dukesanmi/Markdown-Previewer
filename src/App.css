@@ -1,0 +1,231 @@
+/* lllllllllllll*/
+  .body-light {
+    background-color: #e8e8e8;
+    padding-bottom: 3.7em;
+    overflow-y: hidden;
+    transition: background-color 0.3s ease-in;
+
+  }
+
+  .body-dark {
+    background-color: #000;
+    padding-bottom: 3.7em;
+    overflow-y: hidden;
+    transition: background-color 0.3s ease-in;
+  }
+  
+  header {
+    text-align: center;
+    font-size: 2em;
+  }
+  
+  #app {
+    display: flex;
+    flex-direction: row;
+    max-height: 300vh;
+    margin-top: 5em;
+    margin-left: 3em;
+  }
+  
+  /*editor*/
+  #editor-wrapper {
+    height: 73vh;
+  }
+
+  #editor-wrapper header {
+    width: 30%;
+    padding: 0.5em;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    font-size: 1em;
+    transition: background-color 0.3s ease-in; 
+  }
+
+  #editor-light {
+    color: red;
+    height: 70vh;
+    width: 45vw;
+    resize: none;
+    outline: none;
+    transition: background-color 0.3s ease-in;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  #editor-dark {
+    background-color: #1a1a1a;
+    color: green;
+    height: 70vh;
+    width: 45vw;
+    resize: none;
+    outline: none;
+    transition: background-color 0.3s ease-in;
+  }
+
+
+/*preview*/
+  #preview-wrapper {
+    margin-left: 2em;
+    height: 73vh;
+  }
+
+  #preview-wrapper header {
+    width: 30%;
+    background-color: #fff;
+    color: green;
+    padding: 0.5em;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-style: none;
+    border-color: #111;
+    border-width: 0.09em;
+    font-size: 1em;
+    transition: background-color 0.3s ease-in;
+  }
+
+  #preview-light {
+    background-color: #fff;
+    height: 70vh;
+    width: 44.68vw;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    transition: background-color 0.3s ease-in;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  #preview-dark {
+    background-color: #1a1a1a;
+    color: grey;
+    height: 70vh;
+    width: 44.68vw;
+    resize: none;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    transition: background-color 0.3s ease-in;
+  }
+
+/*Dark Mode Toggle*/
+.toggle {
+  position: relative;
+  top: 29px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-container {
+  display: flex;
+  margin: 0 auto;
+  margin-left: 97%;
+  margin-top: -40px;
+}
+
+.toggle-container > span {
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-top: 4px;
+  margin-right: 2px;
+}
+
+/*---scrollbar styling------------*/
+/* width */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000;
+  box-shadow: inset 0 0 5px #000; 
+  border-radius: 1px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray; 
+  border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: gray; 
+}
+
+/*----Media query----*/
+@media only screen and (max-width: 800px) {
+  /*navigation bar*/
+  #app {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*editor*/
+  #editor-wrapper header {
+    width: 87.80%;
+  }
+
+  #editor-light {
+    width: 90%;
+  }
+
+  #editor-dark {
+    width: 90%;
+  }
+
+  /*preview*/
+  #preview-wrapper {
+    margin-top: 2.8em;
+    margin-left: 0.01em;
+  }
+
+  #preview-wrapper header {
+    width: 87.80%;
+  }
+
+  #preview-light {
+    font-size: 70%;
+    width: 91.4%;
+    margin-left: 0.03em;
+  }
+
+  #preview-dark {
+    font-size: 80%;
+    width: 91.4%;
+    margin-left: 0.03em;
+  }
+
+/*Dark Mode Toggle*/
+.toggle-container {
+  margin-left: 95%;
+  margin-top: -31px;
+}
+
+.toggle-container > span {
+  font-size: 1em;
+  margin-right: 5px;
+ }
+ /*---scrollbar styling------------*/
+  /* width */
+  ::-webkit-scrollbar {
+    width: 9px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000;
+    box-shadow: inset 0 0 5px #000; 
+    border-radius: 1px;
+  }
+ 
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 1px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: gray; 
+  }
+}  
